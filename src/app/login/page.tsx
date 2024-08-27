@@ -22,7 +22,7 @@ export default function LoginPage() {
     if (res.ok) {
       const { token } = await res.json();
       localStorage.setItem('token', token);
-      router.push('/dashboard');
+      router.push('/crop');
     } else {
       alert('Login failed');
     }

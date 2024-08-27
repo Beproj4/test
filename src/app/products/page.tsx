@@ -1,6 +1,7 @@
 // src/app/products/page.tsx
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 interface Product {
@@ -36,9 +37,11 @@ export default function ProductsPage() {
             key={product._id}
             className="bg-white shadow-md rounded-lg overflow-hidden"
           >
-            <img
+            <Image
               src={product.image}
               alt={product.name}
+              width={150}
+              height={150}
               className="w-full h-48 object-cover"
             />
             <div className="p-4">

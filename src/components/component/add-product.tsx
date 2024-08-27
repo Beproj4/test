@@ -87,14 +87,17 @@ function Addproduct() {
       });
       const url = await getDownloadURL(storageRef);
       setImg(url);
+      const obj = {
+        name,description,price,image : url
+      }
+      console.log(obj)
       const resp = await fetch("/api/add-product",{
         method : "POST",
         headers : {
           "Content-Type" : "application/json"
         },
-        body : JSON.stringify({
-          name,description,price,image : url
-        })
+        
+        body : JSON.stringify(obj)
       })
       const dataa = await resp.json();
       if(dataa.success){

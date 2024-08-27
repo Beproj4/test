@@ -20,7 +20,7 @@ export default function RegisterPage() {
       },
       body: JSON.stringify({ email, password, role }),
     });
-
+    
     if (res.ok) {
       router.push('/login');
     } else {

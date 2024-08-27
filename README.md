@@ -34,3 +34,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+A dashboard with a sidenav which has options for Requests, Add Product , Edit Products , Review Request with Requests as a current or default option open , he must see three boxes at the other part of side nav which have First box as total number of requests recieved ,second box having total requests approved and and last box with total requests rejected. And below that a table which shows All the recent reuests aproved or rejected.The table has 3 columns , username , email and status , the status will be green dot for approved requests and red dot for rejected ones.
+
+![product](image.png)
+
+

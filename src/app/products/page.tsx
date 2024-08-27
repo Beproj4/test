@@ -42,6 +42,7 @@ export default function ProductsPage() {
               alt={product.name}
               width={150}
               height={150}
+              unoptimized
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
